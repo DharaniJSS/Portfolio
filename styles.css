@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Softer background color */
+}
+
+/* Toggle Bar Container */
+.toggle-bar-container {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #b0c4de; /* Lighter background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    margin-bottom: 20px;
+    border: 2px solid #4682b4; /* Softer blue border */
+    transition: transform 0.2s ease;
+}
+
+.toggle-bar-container:hover {
+    transform: scale(1.03);
+}
+
+/* Pill-shaped Buttons */
+.pill-btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    color: #4682b4; /* Softer text color */
+    background-color: #f0f8ff; /* Softer button background */
+    border: 2px solid #4682b4; /* Softer blue border */
+}
+
+.pill-btn:hover {
+    background-color: #4682b4; /* Change to a softer hover color */
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.pill-btn.active {
+    background-color: #4169e1; /* Active color */
+    color: #ffffff;
+    border-color: #4169e1; /* Active border color */
+}
+
+header {
+    font-family: 'CS Lamia', sans-serif;
+    background: linear-gradient(135deg, #add8e6, #4169e1); /* Softer gradient colors */
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+section {
+    padding: 60px 0;
+    color: #4682b4; /* Softer section text color */
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly lower for animation */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation effect */
+}
+
+/* Animation for sections when they come into view */
+section.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+footer {
+    background-color: #b0c4de; /* Lighter footer color */
+    color: #4682b4; /* Softer footer text color */
+}
+
+/* Skill Buttons */
+.skill-btn {
+    color: #ffffff;
+    background-color: #4682b4; /* Softer skill button color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.skill-btn:hover {
+    background-color: #4169e1; /* Softer hover color */
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+/* Center the Toggle Bar */
+.toggle-bar-container {
+    margin: 0 auto; /* Center the toggle bar */
+}
+
+/* Skills Section Button Styling */
+.skill-btn {
+    color: #ffffff; /* White font color */
+    background-color: #4682b4; /* Softer Bootstrap primary color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.skill-btn:hover {
+    background-color: #4169e1; /* Slightly lighter on hover */
+    color: #ffffff;
+}
+
+/* Shape for Welcome Header */
+.header-container {
+    background-color: #4682b4; /* Softer main color */
+    border-radius: 20px;       /* Softer rounded edges */
+    padding: 60px 40px;        /* Increased padding for height */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    max-width: 1800px;          /* Slightly wider */
+    margin: 40px auto 30px;    /* Lower position */
+    text-align: center;        /* Center align text */
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-container p {
+    font-size: 1.25rem;
+    margin-top: 10px;          /* Small spacing between elements */
+}
+
+#projects {
+    position: relative;
+    padding: 5rem 0;
+    background-color: #f0f8ff; /* Softer background for projects */
+}
+
+/* Dots Styling */
+.carousel-indicators {
+    position: relative;
+    bottom: -20px;
+}
+
+.carousel-indicators li {
+    width: 8px; /* Reduced dot size */
+    height: 8px; /* Reduced dot size */
+    border-radius: 50%;
+    background-color: #6c757d; /* Softer color for dots */
+    margin: 0 2px; /* Added margin for spacing */
+}
+
+.carousel-indicators .active {
+    background-color: #4169e1; /* Softer active dot color */
+}
+
+/* Shape Background */
+.project-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: rgba(65, 105, 225, 0.1); /* Softer background shape color */
+    clip-path: circle(50%);
+    z-index: -1;
+}
+
+section {
+    padding: 60px 0;
+    color: #4682b4; /* Softer section text color */
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(20px); /* Start slightly lower for animation */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animation effect */
+}
+
+/* Animation for sections when they come into view */
+section.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+#contact {
+    text-align: center; /* Center the text */
+}
+
+#resume {
+    background-color: #f8f9fa; /* Light background */
+    padding: 60px 0; /* Consistent padding */
+    text-align: center; /* Center the text */
+}
+
+section {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light background for sections */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    margin: 0 auto; /* Center the card */
+    max-width: 600px; /* Maximum width of the card */
+}
+
+/* Optional: Adjust the card body padding */
+.card-body {
+    padding: 20px;
+}
+
+/* Optional: Add transitions for button hover effects */
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}
+
+
+#about .project-shape {
+    background: rgba(0, 123, 255, 0.1); /* Color for About Me section */
+}
+
+#contact .project-shape {
+    background: rgba(255, 193, 7, 0.1); /* Color for Contact section */
+}
+
+#about p, #contact p {
+    background: none; /* No background color */
+    border: none;     /* No border */
+    padding: 0;      /* No padding */
+    margin: 0;       /* Remove margin if needed */
+    color: #007bff;  /* Set a text color (adjust as needed) */
+    font-size: 1.1rem; /* Adjust font size if desired */
+}
